@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  background-color: rgb(242, 157, 107);
+}
+
+main {
+  padding: 36px;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #170c91 1.18%, #01b3ff 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(4, 0, 0);
+}
+
+/* Main Form Styling */
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #170c91 1.18%, #01b3ff 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Font Size Buttons Styling */
+.font-size-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.font-size-button {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #170c91 1.18%, #01b3ff 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.font-size-button:hover {
+  background: linear-gradient(90deg, #170c91 1.18%, #01b3ff 100%);
+}
+
+/* Meme image and text styling */
+.meme-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.meme {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme--image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 3px;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.meme--text {
+  cursor: move;
+  line-height: 1;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin: 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
